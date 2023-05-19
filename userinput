@@ -1,1 +1,17 @@
-
+$(eval var userInputs = ["input1", "input2", "input3"];
+var userInput = "$(query)";
+if (userInputs.includes(userInput)) {
+  switch(userInput) {
+    case "input1":
+      "Response to input1";
+      break;
+    case "input2":
+      "Response to input2";
+      break;
+    case "input3":
+      "Response to input3";
+      break;
+  }
+} else {
+  "No matching response for " + userInput;
+})
